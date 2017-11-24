@@ -10,7 +10,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ualberta.mis413project.LogIn">
+    tools:context="com.ualberta.mis413project.Register">
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="446dp"
@@ -91,7 +91,27 @@
         app:layout_constraintTop_toBottomOf="@+id/userID" />
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/register"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="8dp"
+        android:background="#00f7fafb"
+        android:fontFamily="cursive"
+        android:text="Register"
+        android:textColor="#fbefef"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/trysignin"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginBottom="140dp"
@@ -99,34 +119,15 @@
         android:layout_marginRight="120dp"
         android:background="#00f7fafb"
         android:fontFamily="cursive"
-        android:text="Sign Up"
+        android:text="Try Sign In?"
         android:textColor="#fbefef"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-
-    <Button
-        android:id="@+id/signin"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="120dp"
-        android:background="#00f7fafb"
-        android:fontFamily="cursive"
-        android:text="Sign In"
-        android:textColor="#fbefef"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/signup"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintVertical_bias="0.488" />
 
     <TextView
         android:id="@+id/textView3"

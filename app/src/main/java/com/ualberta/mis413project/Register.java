@@ -5,20 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
-import java.util.Objects;
-
-public class LogIn extends AppCompatActivity {
+public class Register extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+        setContentView(R.layout.activity_register);
         getSupportActionBar().hide();
-        configureSignUpButton();
-        configureSignInButton();
+        configureRegisterButton();
+        configureTrySignInButton();
     }
 
 
@@ -36,12 +32,12 @@ public class LogIn extends AppCompatActivity {
      * SignUp Button brings user to Register Page
      * Once SignUp Button is clicked, the current Login Page is closed.
      */
-    private void configureSignUpButton(){
-        Button addSignUpButton = (Button) findViewById(R.id.signup);
+    private void configureRegisterButton(){
+        Button addSignUpButton = (Button) findViewById(R.id.register);
         addSignUpButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                startActivity(new Intent(LogIn.this,Register.class));//Let signup buttion jump to Register activity page.
+                startActivity(new Intent(Register.this,Register.class));//Let signup buttion jump to Register activity page.
 //                finish();
             }
 
@@ -62,12 +58,12 @@ public class LogIn extends AppCompatActivity {
      * @author donglin
      * @since 2.0
      */
-    private void configureSignInButton() {
-        Button addSignInButton = (Button) findViewById(R.id.signin);
+    private void configureTrySignInButton() {
+        Button addSignInButton = (Button) findViewById(R.id.trysignin);
         addSignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LogIn.this, Register.class));//Let signup buttion jump to Register activity page.
+                startActivity(new Intent(Register.this, LogIn.class));//Let signup buttion jump to Register activity page.
             }
 
         });
@@ -78,3 +74,4 @@ public class LogIn extends AppCompatActivity {
 
 
 }
+

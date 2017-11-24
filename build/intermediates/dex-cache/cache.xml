@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/yongjiahuang/Desktop/MIS413/MIS413Project/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/yongjiahuang/Desktop/MIS413/MIS413Project/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4286d52fd20802b84c4fe36f50558ebfa356623d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/yongjiahuang/Desktop/MIS413/MIS413Project/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e3e685062e1eb02d32073b9d981da5817631fa7f">
+        <dex dex="/Users/yongjiahuang/Desktop/MIS413/MIS413Project/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2ce3eb9263e8fc935af45282ef2be275b6356cc3/classes.dex" />
+    </item>
+
+</items>
