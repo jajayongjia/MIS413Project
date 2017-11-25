@@ -10,84 +10,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DDAC0000"
     tools:context="com.ualberta.mis413project.LogIn">
+
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="446dp"
-        android:layout_height="665dp"
-        app:srcCompat="@drawable/canada_flag_leaves_maple_cool_53132_750x1334"
+        android:id="@+id/imageView5"
+        android:layout_width="497dp"
+        android:layout_height="630dp"
+        app:srcCompat="@drawable/maple_leaf"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="-29dp"
-        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="88dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="-10dp"
+        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="-30dp"
-        app:layout_constraintVertical_bias="0.353" />
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.38"
+        app:layout_constraintHorizontal_bias="0.702" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="111dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="cursive"
         android:text="Be Canadian"
         android:textAppearance="@android:style/TextAppearance.WindowTitle"
-        android:textColor="#640000"
+        android:textColor="@android:color/background_light"
         android:textSize="60sp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="50dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/userID"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="120dp"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="125dp"
         android:layout_marginRight="120dp"
-        android:background="#33f7fafb"
+        android:layout_marginTop="200dp"
+        android:background="#33cc0000"
         android:ems="10"
         android:hint="User name"
-        android:textColorHint="#FFFFFF"
 
 
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
-        android:singleLine="true"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="200dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="120dp"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="125dp"
         android:layout_marginRight="120dp"
-        android:background="#33f7fafb"
+        android:layout_marginTop="20dp"
+        android:background="#33cc0000"
         android:ems="10"
         android:hint="Password"
+
+
         android:inputType="textPersonName"
-
-
         android:lineSpacingExtra="8sp"
         android:singleLine="true"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textColorHint="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@+id/userID" />
 
     <Button
@@ -98,11 +100,11 @@
         android:layout_marginLeft="100dp"
         android:layout_marginRight="120dp"
         android:background="#00f7fafb"
-        android:fontFamily="cursive"
+        android:fontFamily="sans-serif"
         android:text="Sign Up"
-        android:textColor="#fbefef"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -112,20 +114,19 @@
         android:id="@+id/signin"
         android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="120dp"
+        android:layout_marginTop="8dp"
         android:background="#00f7fafb"
-        android:fontFamily="cursive"
+        android:fontFamily="sans-serif"
         android:text="Sign In"
-        android:textColor="#fbefef"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/signup"
-        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <TextView
@@ -135,17 +136,17 @@
         android:layout_marginBottom="30dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="80dp"
-        android:fontFamily="cursive"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
         android:text="Let's VOTE!"
-        android:textColor="#fbefef"
-        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/userID"
-        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintHorizontal_bias="0.988"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.671" />
+        app:layout_constraintVertical_bias="1.0" />
+
 
 
 </android.support.constraint.ConstraintLayout>
