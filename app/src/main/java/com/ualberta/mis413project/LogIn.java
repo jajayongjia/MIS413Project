@@ -67,7 +67,7 @@ public class LogIn extends AppCompatActivity {
         addSignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LogIn.this, Register.class));//Let signup buttion jump to Register activity page.
+                startActivity(new Intent(LogIn.this, MenuPage.class));//Let signup buttion jump to Register activity page.
             }
 
         });

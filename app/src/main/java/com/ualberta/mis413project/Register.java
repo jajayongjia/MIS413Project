@@ -37,7 +37,7 @@ public class Register extends AppCompatActivity {
         addSignUpButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                startActivity(new Intent(Register.this,Register.class));//Let signup buttion jump to Register activity page.
+                startActivity(new Intent(Register.this,MenuPage.class));//Let signup buttion jump to Register activity page.
 //                finish();
             }
 
