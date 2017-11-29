@@ -22,7 +22,8 @@
             android:label="@string/title_activity_menu_page"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".CalendarAdd" />
-        <activity android:name=".CalendarView"></activity>
+        <activity android:name=".CalendarView" />
+        <activity android:name=".Detail_activity"></activity>
     </application>
 
 </manifest>

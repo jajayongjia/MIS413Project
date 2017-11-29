@@ -1,0 +1,48 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ualberta.mis413project.Platforms">
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="10sp"
+        android:text="AT HEART, I AM AN OPTIMIST. Though my job constantly requires me to look to the challenges and dangers on the horizon, I know that Canadians working together can solve any problem, overcome any hurdle. I think that is what makes us Canadian – a profound faith that together, through hard work, compassion and cooperation, we can build a better future.  This platform is about Canada. Our democracy, our economy, our communities – our future. This platform is about people, each and every one of us, and the role we play in our country and the essential services we all need to live safe, happy, fulfilled, and enriched lives.  I know many may think of the Green Party as a single issue party – yet, nothing could be further from the truth. Granted, you know me as someone who for the past forty years has stood firm to protect the air we all breathe, the water we drink, and the land that sustains us. But you also know me as a staunch defender of democracy, of economic policies that make sense, of fairness and openness, of justice and equity.  Have a look at what we are proposing to build a Canada that works together, but don’t stop there. Ask the tough questions of how we will work in the next parliament in collaboration with all parties to do what’s best for Canadians and our country. Then ask the other leaders those same tough questions. You deserve answers – promises are just not good enough.  Our platform is organized around four key issue areas: economy, communities, government, and climate. The policies within have been developed democratically, by people from all walks of Canadian life, from every province, territory, and traditional land.  Canadians inspire me. As Leader of the Green Party, I want to work for citizens to be heard. I want to work to help people who need help, and support small business and local communities as we grow stronger. Canadians in this election, more than ever, can vote from hope and from conviction, not from fear. In this platform you will find optimism, confidence, and sensible Canadian-made plans for a better future.  Elizabeth May  Elizabeth's signature Leader, Green Party of Canada"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/test3"
+        android:layout_width="407dp"
+        android:layout_height="143dp"
+        android:src="@drawable/test3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <!-- TODO: Update blank fragment layout -->
+
+</android.support.constraint.ConstraintLayout>

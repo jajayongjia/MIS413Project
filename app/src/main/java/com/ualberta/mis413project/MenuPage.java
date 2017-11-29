@@ -18,6 +18,8 @@ public class MenuPage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     CalendarFragment calendarFragment = new CalendarFragment();
+    BlankFragment blankFragment = new BlankFragment();
+    Platforms platforms = new Platforms();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,19 +83,18 @@ public class MenuPage extends AppCompatActivity
         if (id == R.id.habit) {
             this.setTitle("My Calendar");
             getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayout_1, calendarFragment).commit();
+        } else if (id == R.id.habitEvent) {
+            this.setTitle("Representatives");
+            FragmentManager manager = getSupportFragmentManager();
+            getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayout_1, blankFragment).commit();
         }
-//        } else if (id == R.id.habitEvent) {
-//            this.setTitle("Habit Event");
-//            habitEventFragment.setArguments(args);
-//            FragmentManager manager = getSupportFragmentManager();
-//            manager.beginTransaction().replace(R.id.relativeLayout_1,habitEventFragment,habitEventFragment.getTag()).commit();
-//
-//        } else if (id == R.id.friends) {
-//            this.setTitle("My Friends");
-//            friendFragment.setArguments(args);
-//            FragmentManager manager = getSupportFragmentManager();
-//            manager.beginTransaction().replace(R.id.relativeLayout_1,friendFragment,friendFragment.getTag()).commit();
-//
+
+        else if (id == R.id.friends) {
+            this.setTitle("Party Platforms");
+            FragmentManager manager = getSupportFragmentManager();
+            getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayout_1, platforms).commit();
+        }
+
 //        } else if (id == R.id.social) {
 //            this.setTitle("News");
 //            newsFragment.setArguments(args);
