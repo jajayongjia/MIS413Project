@@ -20,6 +20,8 @@ public class MenuPage extends AppCompatActivity
     CalendarFragment calendarFragment = new CalendarFragment();
     BlankFragment blankFragment = new BlankFragment();
     Platforms platforms = new Platforms();
+    News news = new News();
+    Setting setting = new Setting();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,28 +87,23 @@ public class MenuPage extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayout_1, calendarFragment).commit();
         } else if (id == R.id.habitEvent) {
             this.setTitle("Representatives");
-            FragmentManager manager = getSupportFragmentManager();
             getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayout_1, blankFragment).commit();
         }
 
         else if (id == R.id.friends) {
             this.setTitle("Party Platforms");
-            FragmentManager manager = getSupportFragmentManager();
             getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayout_1, platforms).commit();
         }
 
-//        } else if (id == R.id.social) {
-//            this.setTitle("News");
-//            newsFragment.setArguments(args);
-//            FragmentManager manager = getSupportFragmentManager();
-//            manager.beginTransaction().replace(R.id.relativeLayout_1,newsFragment ,newsFragment .getTag()).commit();
-//
-//        } else if (id == R.id.setting) {
-//            this.setTitle("My Account");
-//            myAccountFragment.setArguments(args);
-//            FragmentManager manager = getSupportFragmentManager();
-//            manager.beginTransaction().replace(R.id.relativeLayout_1,myAccountFragment ,myAccountFragment .getTag()).commit();
-//        }
+        else if (id == R.id.social) {
+            this.setTitle("News");
+            getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayout_1, news).commit();
+        }
+
+        else if (id == R.id.setting) {
+            this.setTitle("Setting");
+            getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayout_1, setting).commit();
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
