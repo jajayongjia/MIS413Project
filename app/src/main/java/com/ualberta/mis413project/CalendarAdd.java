@@ -13,6 +13,7 @@ public class CalendarAdd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_add);
         configureCreateButton();
+        this.setTitle("Add New Event");
     }
 
     private void configureCreateButton(){

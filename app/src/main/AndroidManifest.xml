@@ -23,7 +23,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".CalendarAdd" />
         <activity android:name=".CalendarView" />
-        <activity android:name=".Detail_activity"></activity>
+        <activity android:name=".Detail_activity" />
+        <activity android:name=".Inbox" />
+        <activity android:name=".MessageDetail"></activity>
     </application>
 
 </manifest>

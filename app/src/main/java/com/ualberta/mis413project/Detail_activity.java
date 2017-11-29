@@ -14,5 +14,6 @@ public class Detail_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_activity);
 
+        this.setTitle("Representives detail");
     }
 }
